@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameStore</title>
+  </head>
+  <body>
+    <hr />
+    <h4>Lista de Games</h4>
+    <ul id="games"></ul>
+    <hr />
+    <h4>Novo Jogo</h4>
+    <input
+      type="text"
+      name="title"
+      id="title"
+      placeholder="Título do jogo"
+    /><br />
+    <input
+      type="number"
+      name="price"
+      id="price"
+      placeholder="Preço do jogo"
+    /><br />
+    <input
+      type="number"
+      name="year"
+      id="year"
+      placeholder="Ano de lançamento"
+    /><br />
+    <button type="button" onclick="addGame()">Criar</button>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="index.js"></script>
+</html>
