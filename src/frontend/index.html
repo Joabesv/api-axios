@@ -8,7 +8,7 @@
   </head>
   <body>
     <hr />
-    <h4>Lista de Games</h4>
+    <h4>Lista de Jogos</h4>
     <ul id="games"></ul>
     <hr />
     <h4>Novo Jogo</h4>
@@ -31,6 +31,34 @@
       placeholder="Ano de lançamento"
     /><br />
     <button type="button" onclick="addGame()">Criar</button>
+    <hr />
+    <h4>Editar Jogo</h4>
+    <input
+      type="text"
+      name="idEdit"
+      id="idEdit"
+      placeholder="ID"
+      readonly
+    /><br />
+    <input
+      type="text"
+      name="titleEdit"
+      id="titleEdit"
+      placeholder="Título do jogo"
+    /><br />
+    <input
+      type="number"
+      name="priceEdit"
+      id="priceEdit"
+      placeholder="Preço do jogo"
+    /><br />
+    <input
+      type="number"
+      name="yearEdit"
+      id="yearEdit"
+      placeholder="Ano de lançamento"
+    /><br />
+    <button type="button" onclick="updateGame()">Editar</button>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="index.js"></script>
